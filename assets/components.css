@@ -1,0 +1,105 @@
+img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image2 {
+  /* border: 10px solid red; */
+  margin-bottom: 15px;
+  /* margin-bottom: 19px; */
+  display: block;
+}
+
+.image3 {
+  /* border: 10px solid red; */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.image4 {
+  /* border: 10px solid red; */
+  margin-bottom: 40px;
+  display: block;
+}
+
+.image5 {
+  /* border: 10px solid red; */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+  background: 0.6;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  color: #ffffff;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 3%;
+  line-height: 1.8rem;
+}
+
+.image__description {
+  color: #ffffff;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1%;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
